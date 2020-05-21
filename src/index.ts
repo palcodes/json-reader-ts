@@ -7,11 +7,11 @@ const app = express();
 
 // API -> show JSON data in the browser
 app.get('/json', (req, res) => {
-    res.send(data.default);
+    res.json(data.default);
 });
 
 // Server runner
-app.listen(3000, () => {
+app.listen(80, () => {
     console.log('Server Running..');
 });
 
